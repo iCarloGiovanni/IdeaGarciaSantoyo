@@ -37,6 +37,7 @@ header{
     margin: 20px;
     position: sticky;
     top: 20px;
+    z-index: 2;
 }
 
 header a img{
@@ -620,4 +621,30 @@ input{
     .cart-card h3{
         font-size: 1rem;
     }
+
+    .social-icons{
+        margin-top: 40px;
+    }
 }
+
+/* animaciones */
+@keyframes latido{
+    0%   {transform: scale(1)}
+    50%  {transform: scale(1.2);}
+    100% {transform: scale(1);}
+  }
+
+  .welcome h1, .title-tienda{
+    animation-name: latido;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    /* animation-delay: 1s; */
+  }
+
+  .pasos img, .subtitulo h1{
+    animation-name: latido;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+  }
