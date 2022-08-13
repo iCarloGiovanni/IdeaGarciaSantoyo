@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>@Carlo.Giovanni - Pedidos</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg col-sm-12">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../img/Paloma.PNG" alt="Logo: Paloma Sentada" width="60" height="60" class="d-inline-block align-text-center"> @Carlo.Giovanni
+                    </a>
+                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/productos.html">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/disenos.html">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/crear.html">Carrito</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../pages/agregar.html">Producto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="../img/playera.PNG" alt="Producto elegido" class="rounded mx-auto d-block img-fluid img-pers">
+                </div>
+                <div class="col-sm">
+                    <div class="formulario">
+                        <h1>Playera</h1>
+                        <form>
+                            <fieldset>
+                                <div class="form1">
+                                    <label for="talla">Talla:</label>
+                                    <select name="talla" class="form-select">
+                                        <option value="CH"> Chico </option>
+                                        <option value="M"> Mediano </option>
+                                        <option value="G"> Grande </option>
+                                    </select>
+                                    <label for="color">Color:</label>
+                                    <div class="form-check form-check-inline mt-3">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">blanco</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">negro</label>
+                                    </div>
+                                        <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                                        <label class="form-check-label" for="inlineRadio3">gris</label>
+                                    </div>
+                                    <div class="align-items-center g-3">
+                                        <label for="cantidad" class="form-label mt-3">Cantidad</label>
+                                        <input type="value" class="form-control" id="cantidad" aria-describedby="cantidad">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary mt-3 float-right">AÑADIR AL CARRITO</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm text-center">
+                    <h1 class="text-center">Detalles</h1>
+                    <table class="table table-bordered mt-3 table-light rounded">
+                        <thead>
+                          <tr>
+                            <th scope="col">Peso</th>
+                            <th scope="col">275 gm/m2</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Tejido</th>
+                            <td>Felpa</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Composición</th>
+                            <td>50% algodón, 50% poliester</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <div class="col-sm">
+                    <h1 class="text-center">Guia de Tallas</h1>
+                    <img src="../img/medidas.PNG" alt="tabla de medidas" class="rounded mx-auto d-block mt-3 img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center subtitulo">Selecciona un diseño</h1>
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col">
+                                <img src="../img/paloma.PNG" alt="diseño 1" class="rounded mx-auto d-block mt-3 img-fluid">
+                            </div>
+                            <div class="col">
+                                <img src="../img/dis_1.PNG" alt="diseño 2" class="rounded mx-auto d-block mt-3 img-fluid">
+                            </div>
+                            <div class="col">
+                                <img src="../img/dis_2.PNG" alt="diseño 3" class="rounded mx-auto d-block mt-3 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col">
+                                <img src="../img/paloma.PNG" alt="diseño 4" class="rounded mx-auto d-block mt-3 img-fluid">
+                            </div>
+                            <div class="col">
+                                <img src="../img/dis_1.PNG" alt="diseño 5" class="rounded mx-auto d-block mt-3 img-fluid">
+                            </div>
+                            <div class="col">
+                                <img src="../img/dis_2.PNG" alt="diseño 6" class="rounded mx-auto d-block mt-3 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col">
+                                <img src="../img/paloma.PNG" alt="diseño 7" class="rounded mx-auto d-block mt-3 img-fluid">
+                            </div>
+                            <div class="col">
+                                <img src="../img/dis_1.PNG" alt="diseño 8" class="rounded mx-auto d-block mt-3 img-fluid">
+                            </div>
+                            <div class="col">
+                                <img src="../img/dis_2.PNG" alt="diseño 9" class="rounded mx-auto d-block mt-3 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="pie-de-pagina">
+        <h3>@Carlo.Giovanni 2022</h3>
+        <h3>Aviso de Privacidad</h3>
+        <div class="social">
+            <h3>Contáctanos</h3>
+            <i class="fa fa-twitter-square"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook-official"></i>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>
