@@ -1,3 +1,9 @@
+.cart-buttons button, .summary button {
+  padding: 4px;
+  border-radius: 12px;
+  border: 0;
+  text-align: center; }
+
 /* reset */
 * {
   margin: 0;
@@ -96,9 +102,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "paso1 paso1-img"
- "paso2-img paso2"
- "paso3 paso3-img";
+  grid-template-areas: "paso1 paso1-img" "paso2-img paso2" "paso3 paso3-img";
   justify-content: center;
   justify-items: center;
   align-items: center; }
@@ -143,9 +147,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "prod1 prod2 prod3"
- "prod4 prod5 prod6"
- "prod7 prod8 prod9";
+  grid-template-areas: "prod1 prod2 prod3" "prod4 prod5 prod6" "prod7 prod8 prod9";
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -189,8 +191,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "side-text formulario"
- "social-contact social-contact";
+  grid-template-areas: "side-text formulario" "social-contact social-contact";
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -248,8 +249,9 @@ input {
   margin-right: 0;
   margin-top: 20px; }
   .botonEB input {
-    border-radius: 14px;
-    border: 0; }
+    border-radius: 12px;
+    border: 0;
+    font-size: 1rem; }
 
 .social-icons {
   display: flex;
@@ -289,10 +291,7 @@ input {
 .cart-buttons {
   padding-bottom: 12px; }
   .cart-buttons button {
-    width: 25%;
-    padding: 6px;
-    border-radius: 14px;
-    border: 0; }
+    width: 25%; }
 
 .carrito h1 {
   margin-left: 10%;
@@ -312,12 +311,8 @@ input {
   margin-top: 40px; }
 
 .summary button {
-  padding: 4px;
   height: 40px;
-  text-align: center;
-  width: 100%;
-  border-radius: 12px;
-  border: 0; }
+  width: 100%; }
 
 .summary td {
   padding: 20px; }
@@ -391,11 +386,7 @@ button:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "prod1 prod2"
- "prod3 prod4"
- "prod5 prod6"
- "prod7 prod8"
- "prod9 prod9";
+    grid-template-areas: "prod1 prod2" "prod3 prod4" "prod5 prod6" "prod7 prod8" "prod9 prod9";
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -407,9 +398,7 @@ button:active {
   .welcome-contacto {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "side-text"
- "formulario"
- "social-contact"; }
+    grid-template-areas: "side-text" "formulario" "social-contact"; }
   .side-text h2 {
     font-size: 1.5rem;
     margin: 14px 20px; }
@@ -423,8 +412,7 @@ button:active {
   .cart-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "carrito"
- "summary"; }
+    grid-template-areas: "carrito" "summary"; }
   .carrito {
     grid-area: carrito; }
     .carrito h1 {

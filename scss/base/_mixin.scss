@@ -1,0 +1,8 @@
+@mixin footer-styles {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    margin: 200px 20px 20px 20px;
+    color: rgb(184, 175, 219);
+    font-size: 14px;
+}
