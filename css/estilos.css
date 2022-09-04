@@ -21,6 +21,8 @@ body {
     z-index: 2; }
     body header .navbar-brand {
       color: whitesmoke; }
+      body header .navbar-brand:hover {
+        color: #b8afdb; }
     body header img {
       border-radius: 100%;
       width: 60px; }
@@ -37,13 +39,20 @@ body {
         font-size: 1.2rem; }
   body h1 {
     color: whitesmoke;
-    font-size: 4rem; }
+    font-size: 5rem; }
   body h2 {
     color: whitesmoke;
     font-size: 2rem; }
+  body h3 {
+    color: whitesmoke;
+    font-size: 4rem; }
   body h4 {
     color: whitesmoke;
-    font-size: 1rem; }
+    font-size: 3rem; }
+  body h5 {
+    color: whitesmoke;
+    font-size: 2rem;
+    opacity: 0.6; }
 
 /* footer */
 footer {
@@ -75,7 +84,7 @@ footer {
     margin: 20px;
     justify-content: center; }
     .welcome div button {
-      width: 30%;
+      width: 40%;
       padding: 20px;
       border-radius: 20px;
       font-size: 1rem; }
@@ -107,10 +116,15 @@ footer {
   justify-items: center;
   align-items: center; }
   .pasos img {
-    width: 60%;
+    width: 80%;
     border-radius: 20px;
-    margin-left: 20%;
     margin-top: 10%; }
+  .pasos .paso1-img {
+    margin-right: 0; }
+  .pasos .paso2-img {
+    margin-left: 10%; }
+  .pasos .paso3-img {
+    margin-right: 0; }
 
 .paso1 {
   grid-area: paso1;
@@ -257,7 +271,11 @@ input {
   display: flex;
   justify-content: space-evenly;
   font-size: 32px;
-  color: whitesmoke; }
+  color: #b8afdb; }
+  .social-icons a {
+    color: #b8afdb; }
+    .social-icons a:hover {
+      color: #382e5b; }
 
 /* cart */
 .cart-container {
@@ -349,6 +367,16 @@ button:active {
   background-color: #b8afdb;
   box-shadow: inset 1px 1px 1px 1px #382e5b; }
 
+.table {
+  width: 80%;
+  margin-left: 3rem; }
+
+.prod-img img {
+  width: 80%; }
+
+.prod-details {
+  margin-top: 100px; }
+
 /* media queries */
 @media screen and (max-width: 600px) {
   .menu {
@@ -360,23 +388,29 @@ button:active {
       padding: 5px; }
   header i {
     grid-area: carrito; }
-  h1 {
-    font-size: 2rem; }
-  h2 {
-    font-size: 1rem; }
-  h3 {
-    font-size: 8px; }
+  footer h5 {
+    font-size: 0.6rem; }
   .welcome {
     display: inline;
     justify-items: center; }
+    .welcome h1 {
+      font-size: 3rem; }
+    .welcome h2 {
+      font-size: 2rem; }
+    .welcome h3 {
+      font-size: 3rem; }
+    .welcome h4 {
+      font-size: 2rem; }
     .welcome img {
       align-self: center; }
-    .welcome button {
-      width: 140px; }
   .subtitulo {
     margin: 20px; }
   .how-to {
     margin-top: 0; }
+    .how-to h3 {
+      font-size: 3rem; }
+    .how-to h4 {
+      font-size: 2rem; }
   /* tienda */
   .title-tienda {
     text-align: center;
@@ -418,7 +452,8 @@ button:active {
     .carrito h1 {
       text-align: center;
       margin-left: 0;
-      margin-top: 0px; }
+      margin-top: 0px;
+      font-size: 3rem; }
     .carrito button {
       width: 40%;
       margin-top: 12px; }
@@ -431,7 +466,29 @@ button:active {
     .summary table {
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 40px; } }
+      margin-bottom: 40px; }
+  .prod-details {
+    margin-top: 20px; }
+  .pasos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "paso1 paso1-img" "paso2-img paso2" "paso3 paso3-img";
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+    .pasos img {
+      margin-top: 5%; }
+    .pasos .paso1-img {
+      margin-right: 10%; }
+    .pasos .paso2-img {
+      margin-left: 10%; }
+    .pasos .paso3-img {
+      margin-right: 10%; }
+    .pasos h3 {
+      font-size: 2rem; }
+    .pasos h4 {
+      font-size: 1rem; } }
 
 @media screen and (max-width: 1024px) {
   .welcome {
